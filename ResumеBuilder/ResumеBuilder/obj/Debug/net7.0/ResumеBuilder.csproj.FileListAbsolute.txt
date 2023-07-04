@@ -1,0 +1,62 @@
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\bin\Debug\net7.0\appsettings.Development.json
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\bin\Debug\net7.0\appsettings.json
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\bin\Debug\net7.0\ResumеBuilder.staticwebassets.runtime.json
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\bin\Debug\net7.0\ResumеBuilder.exe
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\bin\Debug\net7.0\ResumеBuilder.deps.json
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\bin\Debug\net7.0\ResumеBuilder.runtimeconfig.json
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\bin\Debug\net7.0\ResumеBuilder.dll
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\bin\Debug\net7.0\ResumеBuilder.pdb
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\ResumеBuilder.csproj.AssemblyReference.cache
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\ResumеBuilder.GeneratedMSBuildEditorConfig.editorconfig
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\ResumеBuilder.AssemblyInfoInputs.cache
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\ResumеBuilder.AssemblyInfo.cs
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\ResumеBuilder.csproj.CoreCompileInputs.cache
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\ResumеBuilder.MvcApplicationPartsAssemblyInfo.cache
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\ResumеBuilder.RazorAssemblyInfo.cache
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\ResumеBuilder.RazorAssemblyInfo.cs
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\staticwebassets\msbuild.ResumеBuilder.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\staticwebassets\msbuild.build.ResumеBuilder.props
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.ResumеBuilder.props
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.ResumеBuilder.props
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\staticwebassets.pack.json
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\staticwebassets.build.json
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\staticwebassets.development.json
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\scopedcss\bundle\ResumеBuilder.styles.css
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\scopedcss\projectbundle\ResumеBuilder.bundle.scp.css
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\ResumеBuilder.dll
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\refint\ResumеBuilder.dll
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\ResumеBuilder.pdb
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\ResumеBuilder.genruntimeconfig.cache
+D:\Files\Major Projects\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\ref\ResumеBuilder.dll
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\bin\Debug\net7.0\appsettings.Development.json
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\bin\Debug\net7.0\appsettings.json
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\bin\Debug\net7.0\ResumеBuilder.staticwebassets.runtime.json
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\bin\Debug\net7.0\ResumеBuilder.exe
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\bin\Debug\net7.0\ResumеBuilder.deps.json
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\bin\Debug\net7.0\ResumеBuilder.runtimeconfig.json
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\bin\Debug\net7.0\ResumеBuilder.dll
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\bin\Debug\net7.0\ResumеBuilder.pdb
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\ResumеBuilder.csproj.AssemblyReference.cache
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\ResumеBuilder.GeneratedMSBuildEditorConfig.editorconfig
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\ResumеBuilder.AssemblyInfoInputs.cache
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\ResumеBuilder.AssemblyInfo.cs
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\ResumеBuilder.csproj.CoreCompileInputs.cache
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\ResumеBuilder.MvcApplicationPartsAssemblyInfo.cache
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\ResumеBuilder.RazorAssemblyInfo.cache
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\ResumеBuilder.RazorAssemblyInfo.cs
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\staticwebassets\msbuild.ResumеBuilder.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\staticwebassets\msbuild.build.ResumеBuilder.props
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.ResumеBuilder.props
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.ResumеBuilder.props
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\staticwebassets.pack.json
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\staticwebassets.build.json
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\staticwebassets.development.json
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\scopedcss\bundle\ResumеBuilder.styles.css
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\scopedcss\projectbundle\ResumеBuilder.bundle.scp.css
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\ResumеBuilder.dll
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\refint\ResumеBuilder.dll
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\ResumеBuilder.pdb
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\ResumеBuilder.genruntimeconfig.cache
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Debug\net7.0\ref\ResumеBuilder.dll
