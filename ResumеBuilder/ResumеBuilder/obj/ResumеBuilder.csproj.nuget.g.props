@@ -12,4 +12,35 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\pavel\.nuget\packages\" />
   </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)v8.net\1.1.8\contentFiles\any\netstandard2.0\V8_Net_Proxy_x64.dll" Condition="Exists('$(NuGetPackageRoot)v8.net\1.1.8\contentFiles\any\netstandard2.0\V8_Net_Proxy_x64.dll')">
+      <NuGetPackageId>V8.Net</NuGetPackageId>
+      <NuGetPackageVersion>1.1.8</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>V8_Net_Proxy_x64.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)v8.net\1.1.8\contentFiles\any\netstandard2.0\V8_Net_Proxy_x86.dll" Condition="Exists('$(NuGetPackageRoot)v8.net\1.1.8\contentFiles\any\netstandard2.0\V8_Net_Proxy_x86.dll')">
+      <NuGetPackageId>V8.Net</NuGetPackageId>
+      <NuGetPackageVersion>1.1.8</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>V8_Net_Proxy_x86.dll</Link>
+    </Content>
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\7.0.7\buildTransitive\net6.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\7.0.7\buildTransitive\net6.0\Microsoft.EntityFrameworkCore.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design\7.0.7\build\net6.0\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design\7.0.7\build\net6.0\Microsoft.EntityFrameworkCore.Design.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.clearscript.v8.native.win-x86\7.4.2\build\Microsoft.ClearScript.V8.Native.win-x86.props" Condition="Exists('$(NuGetPackageRoot)microsoft.clearscript.v8.native.win-x86\7.4.2\build\Microsoft.ClearScript.V8.Native.win-x86.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.clearscript.v8.native.win-x64\7.4.2\build\Microsoft.ClearScript.V8.Native.win-x64.props" Condition="Exists('$(NuGetPackageRoot)microsoft.clearscript.v8.native.win-x64\7.4.2\build\Microsoft.ClearScript.V8.Native.win-x64.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\pavel\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.3</PkgMicrosoft_CodeAnalysis_Analyzers>
+    <PkgMicrosoft_CodeAnalysis_AnalyzerUtilities Condition=" '$(PkgMicrosoft_CodeAnalysis_AnalyzerUtilities)' == '' ">C:\Users\pavel\.nuget\packages\microsoft.codeanalysis.analyzerutilities\3.3.0</PkgMicrosoft_CodeAnalysis_AnalyzerUtilities>
+    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\pavel\.nuget\packages\microsoft.entityframeworkcore.tools\7.0.7</PkgMicrosoft_EntityFrameworkCore_Tools>
+    <PkgMicrosoft_ClearScript_V8_Native_win-x86 Condition=" '$(PkgMicrosoft_ClearScript_V8_Native_win-x86)' == '' ">C:\Users\pavel\.nuget\packages\microsoft.clearscript.v8.native.win-x86\7.4.2</PkgMicrosoft_ClearScript_V8_Native_win-x86>
+    <PkgMicrosoft_ClearScript_V8_Native_win-x64 Condition=" '$(PkgMicrosoft_ClearScript_V8_Native_win-x64)' == '' ">C:\Users\pavel\.nuget\packages\microsoft.clearscript.v8.native.win-x64\7.4.2</PkgMicrosoft_ClearScript_V8_Native_win-x64>
+  </PropertyGroup>
 </Project>

@@ -1,7 +1,12 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using ResumеBuilder.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<ResumеBuilderContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ResumеBuilderContext") ?? throw new InvalidOperationException("Connection string 'ResumеBuilderContext' not found.")));
 
 var app = builder.Build();
 
