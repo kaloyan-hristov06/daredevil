@@ -36,7 +36,7 @@ namespace ResumеBuilder.Pages.Users
             if (await TryUpdateModelAsync<User>(
                 emptyUser,
                 "user",
-                s => s.Email, s => s.Username, s => s.FullName, s => s.Password))
+                s => s.Email, s => s.Username, s => s.FullName, s => s.Password, s => s.Age, s => s.DateOfBirth))
             {
                 if (_context.User.Any(x => x.Email == emptyUser.Email)
                     || _context.User.Any(x => x.Username == emptyUser.Username))

@@ -17,6 +17,12 @@
                 @Html.DisplayNameFor(model => model.User[0].FullName)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.User[0].Age)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User[0].DateOfBirth)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.User[0].Username)
             </th>
             <th>
@@ -35,6 +41,12 @@
                 @Html.DisplayFor(modelItem => item.FullName)
             </td>
             <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOfBirth)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.Username)
             </td>
             <td>
@@ -42,7 +54,7 @@
             </td>
             <td>
                 @Html.PasswordFor(modelItem => item.Password, new { @readonly = "readonly" })
-            </td>
+            </td
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
