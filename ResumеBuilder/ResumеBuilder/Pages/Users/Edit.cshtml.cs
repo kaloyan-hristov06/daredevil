@@ -25,7 +25,7 @@ namespace ResumеBuilder.Pages.Users
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.User == null)
+            if (id == null)
             {
                 return NotFound();
             }
@@ -66,7 +66,7 @@ namespace ResumеBuilder.Pages.Users
                 }
             }
 
-            return RedirectToPage("./Index");
+            return RedirectToPage("./Details");
         }
 
         private bool UserExists(int id)

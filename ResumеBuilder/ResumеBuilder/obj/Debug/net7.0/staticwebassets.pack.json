@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\Files\\Github\\daredevil\\ResumеBuilder\\ResumеBuilder\\wwwroot\\images\\generic-profile-image.png",
+      "PackagePath": "staticwebassets\\images\\generic-profile-image.png"
+    },
+    {
       "Id": "D:\\Files\\Github\\daredevil\\ResumеBuilder\\ResumеBuilder\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

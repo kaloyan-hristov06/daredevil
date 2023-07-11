@@ -24,7 +24,7 @@ namespace ResumеBuilder.Pages.Users
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.User == null)
+            if (id == null)
             {
                 return NotFound();
             }
@@ -57,7 +57,8 @@ namespace ResumеBuilder.Pages.Users
                 await _context.SaveChangesAsync();
             }
 
-            return RedirectToPage("./Index");
+            HttpContext.Session.Clear();
+            return RedirectToPage("/Index");
         }
     }
 }

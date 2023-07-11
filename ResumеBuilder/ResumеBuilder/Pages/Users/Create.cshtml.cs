@@ -36,7 +36,7 @@ namespace ResumеBuilder.Pages.Users
             if (await TryUpdateModelAsync<User>(
                 emptyUser,
                 "user",
-                s => s.Email, s => s.Username, s => s.FullName, s => s.Password, s => s.Age, s => s.DateOfBirth))
+                s => s.Email, s => s.Username, s => s.FullName, s => s.Password, s => s.DateOfBirth, s => s.PhoneNumber, s => s.Address))
             {
                 if (_context.User.Any(x => x.Email == emptyUser.Email)
                     || _context.User.Any(x => x.Username == emptyUser.Username))
@@ -45,7 +45,7 @@ namespace ResumеBuilder.Pages.Users
                 }
                 _context.User.Add(emptyUser);
                 await _context.SaveChangesAsync();
-                return RedirectToPage("./Index");
+                return RedirectToPage($"./Details/{emptyUser.Id}");
             }
 
             return Page();

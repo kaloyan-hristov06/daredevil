@@ -25,14 +25,33 @@
                     </ul>
                 </div>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between align-items-center">
-                    <ul class="navbar-nav ms-auto ">
-                        <li class="nav-item">
-                            <a style="font-weight: 600;" class="nav-link text-success" asp-area="" asp-page="/Users/Create">Sign up</a>
-                        </li>
-                        <li class="nav-item">
-                            <a style="font-weight: 600;" class="nav-link text-primary" asp-area="" asp-page="/">Log in</a>
-                        </li>
-                    </ul>
+                    @*Checks if there is an available user session and shows and hides the log in and sign up controls according to the result*@
+                    @{
+                        if(Context.Session.GetString("_Email") == null){
+                            <ul class="navbar-nav ms-auto ">
+                                <li class="nav-item">
+                                    <a style="font-weight: 600;" class="nav-link text-success" asp-area="" asp-page="/Users/Create">Sign up</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a style="font-weight: 600;" class="nav-link text-primary" asp-area="" asp-page="/Users/Login">Log in</a>
+                                </li>
+                            </ul>
+                        }
+                    }
+                    @{
+                        if (Context.Session.GetString("_Email") != null)
+                        {
+                            <ul class="navbar-nav ms-auto ">
+                                <li class="nav-item">
+                                    <a style="font-weight: 600;" class="nav-link text-success" asp-area="" asp-page="/Users/Details" asp-route-id="@Convert.ToUInt32(Context.Session.GetString("_Id"))">@Context.Session.GetString("_Username")</a>
+                                </li>
+                                <li class="nav-item">
+                                    <img src="~/images/generic-profile-image.png" alt="pfp" width="40" height="40" />
+                                </li>
+                            </ul>
+                        }
+                    }
+                    
                 </div>
             </div>
         </nav>

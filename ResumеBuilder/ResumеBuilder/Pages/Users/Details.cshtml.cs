@@ -19,11 +19,11 @@ namespace ResumеBuilder.Pages.Users
             _context = context;
         }
 
-      public User User { get; set; } = default!; 
+        public User User { get; set; } = default!; 
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.User == null)
+            if (id == null)
             {
                 return NotFound();
             }

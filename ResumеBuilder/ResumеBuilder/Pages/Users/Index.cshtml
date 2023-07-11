@@ -17,9 +17,6 @@
                 @Html.DisplayNameFor(model => model.User[0].FullName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.User[0].Age)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.User[0].DateOfBirth)
             </th>
             <th>
@@ -27,6 +24,12 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.User[0].Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User[0].PhoneNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User[0].Address)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.User[0].Password)
@@ -41,9 +44,6 @@
                 @Html.DisplayFor(modelItem => item.FullName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Age)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.DateOfBirth)
             </td>
             <td>
@@ -51,6 +51,12 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhoneNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
             </td>
             <td>
                 @Html.PasswordFor(modelItem => item.Password, new { @readonly = "readonly" })

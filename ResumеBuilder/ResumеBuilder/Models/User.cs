@@ -11,10 +11,6 @@ namespace ResumеBuilder.Models
         [Required]
         public string? FullName { get; set; }
 
-        [Range(1, 100)]
-        [Required]
-        public int Age { get; set; }
-
         [DisplayName("Date Of Birth")]
         [DataType(DataType.Date)]
         [Required]
@@ -27,6 +23,14 @@ namespace ResumеBuilder.Models
         [DataType(DataType.EmailAddress)]
         [Required]
         public string? Email { get; set; }
+
+        [DataType(DataType.PhoneNumber)]
+        [DisplayName("Phone Number")]
+        [Required]
+        public string? PhoneNumber { get; set; }
+
+        [Required]
+        public string? Address { get; set; }
 
         [DataType(DataType.Password)]
         [StringLength(20, MinimumLength = 3)]
