@@ -45,7 +45,7 @@ namespace ResumеBuilder.Pages.Users
                 }
                 _context.User.Add(emptyUser);
                 await _context.SaveChangesAsync();
-                return RedirectToPage($"./Details/{emptyUser.Id}");
+                return RedirectToPage($"./Login");
             }
 
             return Page();
