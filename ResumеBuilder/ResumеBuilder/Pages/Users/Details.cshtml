@@ -16,11 +16,9 @@
     }
     else
     {
-        <h1>Details</h1>
-
+        <h2>Details</h2>
+        <hr />
         <div>
-            <h4>User</h4>
-            <hr />
             <dl class="row">
                 <dt class="col-sm-2">
                     @Html.DisplayNameFor(model => model.User.FullName)
@@ -64,10 +62,52 @@
                 <dd class="col-sm-10">
                     @Html.PasswordFor(model => model.User.Password, new { @readonly = "readonly" })
                 </dd>
+                <hr />
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.User.Skills)
+                </dt>
+                @{
+                    var skills = Model.User?.Skills?.Split(",");
+
+                    if(skills != null)
+                    {
+                        foreach (var skill in skills)
+                        {
+                            <p>@skill</p>
+                        }
+                    }
+                }
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.User.Interests)
+                </dt>
+                @{
+                    var interests = Model.User?.Interests?.Split(",");
+
+                    if (interests != null)
+                    {
+                        foreach (var interest in interests)
+                        {
+                             <p>@interest</p>
+                        }
+                    }
+                }
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.User.Experiences)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.User.Experiences)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.User.Education)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.User.Education)
+                </dd>
             </dl>
         </div>
         <div>
             <a asp-page="./Edit" asp-route-id="@Model.User?.Id">Edit</a> |
+            <a asp-page="./AddMoreInfo">Add Info</a> |
             <a asp-page="./Delete" asp-route-id="@Model.User?.Id">Delete</a>
         </div>
     }

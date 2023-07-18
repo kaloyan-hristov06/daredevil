@@ -14,9 +14,21 @@ namespace ResumеBuilder.Pages.Users
     {
         private readonly ResumеBuilder.Data.ResumеBuilderContext _context;
 
-        public CreateModel(ResumеBuilder.Data.ResumеBuilderContext context)
+		public const string SessionKeyId = "_Id";
+		public const string SessionKeyEmail = "_Email";
+		public const string SessionKeyUsername = "_Username";
+		public const string SessionKeyFullName = "_FullName";
+		public const string SessionKeyDateOfBirth = "_DateOfBirth";
+		public const string SessionKeyPhoneNumber = "_PhoneNumber";
+		public const string SessionKeyAddress = "_Address";
+
+		//logs a session
+		private readonly ILogger<IndexModel> _logger;
+
+		public CreateModel(ResumеBuilder.Data.ResumеBuilderContext context, ILogger<IndexModel> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
         public IActionResult OnGet()
@@ -45,7 +57,16 @@ namespace ResumеBuilder.Pages.Users
                 }
                 _context.User.Add(emptyUser);
                 await _context.SaveChangesAsync();
-                return RedirectToPage($"./Login");
+
+				HttpContext.Session.SetString(SessionKeyId, emptyUser.Id.ToString());
+				HttpContext.Session.SetString(SessionKeyEmail, emptyUser.Email);
+				HttpContext.Session.SetString(SessionKeyUsername, emptyUser.Username);
+				HttpContext.Session.SetString(SessionKeyFullName, emptyUser.FullName);
+				HttpContext.Session.SetString(SessionKeyDateOfBirth, emptyUser.DateOfBirth.ToString().Remove(10));
+				HttpContext.Session.SetString(SessionKeyPhoneNumber, emptyUser.PhoneNumber);
+				HttpContext.Session.SetString(SessionKeyAddress, emptyUser.Address);
+
+                return RedirectToPage("./AddMoreInfo");
             }
 
             return Page();

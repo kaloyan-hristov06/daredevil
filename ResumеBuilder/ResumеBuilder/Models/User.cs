@@ -36,5 +36,13 @@ namespace ResumеBuilder.Models
         [StringLength(20, MinimumLength = 3)]
         [Required]
         public string? Password { get; set; }
+
+        public string? Skills { get; set; }
+
+        public string? Interests { get; set; }
+
+        public string? Experiences { get; set; }
+
+        public string? Education { get; set; }
     }
 }

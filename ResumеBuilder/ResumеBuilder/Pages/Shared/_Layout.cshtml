@@ -43,6 +43,9 @@
                         {
                             <ul class="navbar-nav ms-auto ">
                                 <li class="nav-item">
+                                    <a style="font-weight: 600;" class="nav-link text-success" asp-area="" asp-page="/LogOut">Log out</a>
+                                </li>
+                                <li class="nav-item">
                                     <a style="font-weight: 600;" class="nav-link text-success" asp-area="" asp-page="/Users/Details" asp-route-id="@Convert.ToUInt32(Context.Session.GetString("_Id"))">@Context.Session.GetString("_Username")</a>
                                 </li>
                                 <li class="nav-item">

@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\images\\generic-profile-image.png"
     },
     {
+      "Id": "D:\\Files\\Github\\daredevil\\ResumеBuilder\\ResumеBuilder\\wwwroot\\js\\addInfo.js",
+      "PackagePath": "staticwebassets\\js\\addInfo.js"
+    },
+    {
       "Id": "D:\\Files\\Github\\daredevil\\ResumеBuilder\\ResumеBuilder\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

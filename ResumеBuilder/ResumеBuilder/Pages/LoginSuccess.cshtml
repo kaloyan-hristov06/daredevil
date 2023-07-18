@@ -5,13 +5,9 @@
 	{
 		<h1>Successfully logged in!</h1>
 		<h2>Details:</h2>
-		<p><b>Full Name: </b>@HttpContext.Session.GetString("_FullName")</p>
 		<p><b>Username: </b>@HttpContext.Session.GetString("_Username")</p>
 		<p><b>Email: </b>@HttpContext.Session.GetString("_Email")</p>
-		<p><b>Date Of Birth:</b>@HttpContext.Session.GetString("_DateOfBirth")</p>
-		<p><b>Details Page Address:</b>@HttpContext.Session.GetString("_DetailsPage")</p>
-		<p><b>Details Page Address:</b>@HttpContext.Session.GetString("_PhoneNumber")</p>
-		<p><b>Details Page Address:</b>@HttpContext.Session.GetString("_Address")</p>
+		<a asp-page="/Users/Details" asp-route-id="@Convert.ToInt32(HttpContext.Session.GetString("_Id"))">Details</a>
 	}
 }
 	

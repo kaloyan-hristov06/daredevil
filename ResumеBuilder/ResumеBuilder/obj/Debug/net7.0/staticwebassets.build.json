@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jC1H7o3iFI/+uj3Nz8y/unUeOYTWPsf9Sw0d+TopyX0=",
+  "Hash": "G7QMZJ1GMH1lnxX/KIDQebY2bkh03R/fUx1/Wn3WWA4=",
   "Source": "ResumеBuilder",
   "BasePath": "_content/ResumеBuilder",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\generic-profile-image.png"
+    },
+    {
+      "Identity": "D:\\Files\\Github\\daredevil\\ResumеBuilder\\ResumеBuilder\\wwwroot\\js\\addInfo.js",
+      "SourceId": "ResumеBuilder",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Files\\Github\\daredevil\\ResumеBuilder\\ResumеBuilder\\wwwroot\\",
+      "BasePath": "_content/ResumеBuilder",
+      "RelativePath": "js/addInfo.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\addInfo.js"
     },
     {
       "Identity": "D:\\Files\\Github\\daredevil\\ResumеBuilder\\ResumеBuilder\\wwwroot\\js\\site.js",

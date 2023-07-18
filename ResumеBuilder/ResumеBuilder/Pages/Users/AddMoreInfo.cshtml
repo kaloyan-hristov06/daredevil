@@ -1,0 +1,102 @@
+﻿@page
+@model ResumеBuilder.Pages.Users.AddMoreInfoModel
+@{
+	ViewData["Name"] = "Add More Information";
+}
+
+@{
+	if(HttpContext.Session.GetString("_Id") == null)
+	{
+		<h1>Restricted Access</h1>
+	}
+	else
+	{
+		<h2>Add / Edit More User Information</h2>
+
+		<hr />
+
+		<div class="row">
+			<div class="col-md-4">
+				<form method="post">
+					<div id="skillGroup">
+						<h3>Skills</h3>
+						<button type="button" style="width:40px;" onclick="AddSkillField()" class="btn btn-success">+</button>
+						<button type="button" style="width:40px;" onclick="RemoveSkillField()" class="btn btn-danger">-</button>
+						<br />
+						<br />
+						<input type="text" name="skillField" class="form-control"/>
+					</div>
+					<hr />
+					<div id="interestGroup">
+						<h3>Interests</h3>
+						<button type="button" style="width:40px;" onclick="AddInterestField()" class="btn btn-success">+</button>
+						<button type="button" style="width:40px;" onclick="RemoveInterestField()" class="btn btn-danger">-</button>
+						<br />
+						<br />
+						<input type="text" name="interestField" class="form-control"/>
+					</div>
+
+					<hr />
+
+
+					<div id="experienceGroup">
+						<h3>Expereience</h3>
+						<button type="button" style="width:40px;" onclick="AddExperienceFields()" class="btn btn-success">+</button>
+						<button type="button" style="width:40px;" onclick="RemoveExperienceFields()" class="btn btn-danger">-</button>
+						<fieldset id="mainExperienceSet" class="experienceSet">
+							<h4>Job</h4>
+							<label>From</label>
+							<input type="date" name="experienceFromDate" class="form-control experience-part" />
+							<label>To</label>
+							<input type="date" name="experienceToDate" class="form-control experience-part" />
+							<br/>
+							<label>Job Title</label>
+							<input type="string" name="experienceJobTitle" class="form-control experience-part" />
+							<br/>
+							<label>Company Name</label>
+							<input type="string" name="experienceCompanyName" class="form-control experience-part" />
+							<br/>
+							<label>City</label>
+							<input type="string" name="experienceCity" class="form-control experience-part" />
+							<br />
+							<label>Country</label>
+							<input type="string" name="experienceCountry" class="form-control experience-part" />
+							<hr />
+						</fieldset>
+					</div>
+
+					<div id="educationGroup">
+						<h3>Education</h3>
+						<button type="button" style="width:40px;" onclick="AddEducationFields()" class="btn btn-success">+</button>
+						<button type="button" style="width:40px;" onclick="RemoveEducationFields()" class="btn btn-danger">-</button>
+						<fieldset id="mainEducationSet" class="educationSet">
+							<h4>School/University</h4>
+							<label>Graduated</label>
+							<input type="date" name="graduated" class="form-control education-part" />
+							<br/>
+							<label>Degree</label>
+							<input type="string" name="educationDegree" class="form-control education-part" />
+							<br/>
+							<label>School/University</label>
+							<input type="string" name="educationStudyPlace" class="form-control education-part" />
+							<br/>
+							<label>City</label>
+							<input type="string" name="educationCity" class="form-control education-part" />
+							<br />
+							<label>Country</label>
+							<input type="string" name="educationCountry" class="form-control education-part" />
+							<hr />
+						</fieldset>
+					</div>
+
+					<br />
+					<div id="submit-group">
+						<input type="submit" value="Add" class="btn btn-primary" />
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<script src="~/js/addInfo.js"></script>
+	}
+}
