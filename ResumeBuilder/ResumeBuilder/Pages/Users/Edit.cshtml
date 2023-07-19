@@ -65,7 +65,7 @@
         </div>
 
         <div>
-            <a asp-page="./Details" asp-route-id="@Model.User?.Id">Back to Details</a>
+            <a asp-page="./Details" asp-route-id="@Convert.ToInt32(Model.User?.Id)">Back to Details</a>
         </div>
 
         @section Scripts {

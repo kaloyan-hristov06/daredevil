@@ -66,7 +66,7 @@ namespace ResumeBuilder.Pages.Users
                 }
             }
 
-            return RedirectToPage("./Details");
+            return Redirect($"/Users/Details/{_context.User.FirstAsync(x => x.Email == HttpContext.Session.GetString("_Email")).Id}");
         }
 
         private bool UserExists(int id)
