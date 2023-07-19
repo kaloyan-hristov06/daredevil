@@ -1,0 +1,77 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ResumeBuilder
+build_property.RootNamespace = ResumeBuilder
+build_property.ProjectDir = D:\Files\Github\daredevil\ResumeBuilder\ResumeBuilder\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Files\Github\daredevil\ResumeBuilder\ResumeBuilder
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Files/Github/daredevil/ResumeBuilder/ResumeBuilder/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/Github/daredevil/ResumeBuilder/ResumeBuilder/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/Github/daredevil/ResumeBuilder/ResumeBuilder/Pages/LoginSuccess.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5TdWNjZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/Github/daredevil/ResumeBuilder/ResumeBuilder/Pages/LogOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nT3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/Github/daredevil/ResumeBuilder/ResumeBuilder/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/Github/daredevil/ResumeBuilder/ResumeBuilder/Pages/Users/AddMoreInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcQWRkTW9yZUluZm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/Github/daredevil/ResumeBuilder/ResumeBuilder/Pages/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/Github/daredevil/ResumeBuilder/ResumeBuilder/Pages/Users/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/Github/daredevil/ResumeBuilder/ResumeBuilder/Pages/Users/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/Github/daredevil/ResumeBuilder/ResumeBuilder/Pages/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/Github/daredevil/ResumeBuilder/ResumeBuilder/Pages/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/Github/daredevil/ResumeBuilder/ResumeBuilder/Pages/Users/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/Github/daredevil/ResumeBuilder/ResumeBuilder/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/Github/daredevil/ResumeBuilder/ResumeBuilder/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/Github/daredevil/ResumeBuilder/ResumeBuilder/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-pjsplv5b26

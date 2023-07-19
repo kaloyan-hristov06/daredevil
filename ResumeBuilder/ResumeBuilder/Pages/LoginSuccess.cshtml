@@ -1,0 +1,14 @@
+﻿@page
+@model ResumeBuilder.Pages.LoginSuccessModel
+@{
+	if (HttpContext.Session.GetString("_Email") != null)
+	{
+		<h1>Successfully logged in!</h1>
+		<h2>Details:</h2>
+		<p><b>Username: </b>@HttpContext.Session.GetString("_Username")</p>
+		<p><b>Email: </b>@HttpContext.Session.GetString("_Email")</p>
+		<a asp-page="/Users/Details" asp-route-id="@Convert.ToInt32(HttpContext.Session.GetString("_Id"))">Details</a>
+	}
+}
+	
+

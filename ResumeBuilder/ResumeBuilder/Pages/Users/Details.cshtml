@@ -1,0 +1,153 @@
+﻿@page "{id:int?}"
+
+@model ResumeBuilder.Pages.Users.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+@{
+    string modelId = Html.DisplayTextFor(m => m.User.Id).ToString();
+    string? sessionId = HttpContext.Session.GetString("_Id");
+
+    if(sessionId == null || modelId != sessionId)
+    {
+        <h1>Restricted Access</h1>
+    }
+    else
+    {
+        <h2>Details</h2>
+        <hr />
+        <div>
+            <dl class="row">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.User.FullName)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.User.FullName)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.User.DateOfBirth)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.User.DateOfBirth)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.User.Username)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.User.Username)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.User.Email)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.User.Email)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.User.PhoneNumber)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.User.PhoneNumber)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.User.Address)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.User.Address)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.User.Password)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.PasswordFor(model => model.User.Password, new { @readonly = "readonly" })
+                </dd>
+                <hr />
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.User.Skills)
+                </dt>
+                @{
+                    var skills = Model.User?.Skills?.Split(",");
+
+                    if(skills != null)
+                    {
+                        foreach (var skill in skills)
+                        {
+                            <p>@skill</p>
+                        }
+                    }
+                }
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.User.Interests)
+                </dt>
+                @{
+                    var interests = Model.User?.Interests?.Split(",");
+
+                    if (interests != null)
+                    {
+                        foreach (var interest in interests)
+                        {
+                             <p>@interest</p>
+                        }
+                    }
+                }
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.User.Experiences)
+                </dt>
+                <dd class="col-sm-10">
+                    @{
+                        List<string> experienceParts = Model.User?.Experiences.Split("|").ToList();
+                        List<string> experienceFromDate = experienceParts[0].Split(",").ToList();
+                        List<string> experienceToDate = experienceParts[1].Split(",").ToList();
+                        List<string> experienceJobTitle = experienceParts[2].Split(",").ToList();
+                        List<string> experienceCompany = experienceParts[3].Split(",").ToList();
+                        List<string> experienceCity = experienceParts[4].Split(",").ToList();
+                        List<string> experienceCountry = experienceParts[5].Split(",").ToList();
+
+                        for (int i = 0; i < experienceFromDate.Count; i++)
+                        {
+                            <p><b>@(i+1)</b></p>
+                            <p>@experienceFromDate[i]-@experienceToDate[i]</p>
+                            <p>Job Title:@experienceJobTitle[i]</p>
+                            <p>Company:@experienceCompany[i]</p>
+                            <p>City:@experienceCity[i]</p>
+                            <p>Country:@experienceCountry[i]</p>
+                            <hr />
+                        }
+                    }
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.User.Education)
+                </dt>
+                <dd class="col-sm-10">
+                    @{
+                        List<string> educationParts = Model.User?.Education.Split("|").ToList();
+                        List<string> educationGraduated = experienceParts[0].Split(",").ToList();
+                        List<string> educationDegree = experienceParts[2].Split(",").ToList();
+                        List<string> educationStudyPlace = experienceParts[3].Split(",").ToList();
+                        List<string> educationCity = experienceParts[4].Split(",").ToList();
+                        List<string> educationCountry = experienceParts[5].Split(",").ToList();
+
+                        for (int i = 0; i < educationGraduated.Count; i++)
+                        {
+                            <p><b>@(i+1)</b></p>
+                            <p>Graduated:@educationGraduated[i]</p>
+                            <p>Degree:@educationDegree[i]</p>
+                            <p>Study Place:@educationStudyPlace[i]</p>
+                            <p>City:@educationCity[i]</p>
+                            <p>Country:@educationCountry[i]</p>
+                            <hr />
+                        }
+                    }
+                </dd>
+            </dl>
+        </div>
+        <div>
+            <a asp-page="./Edit" asp-route-id="@Model.User?.Id">Edit</a> |
+            <a asp-page="./AddMoreInfo">Add Info</a> |
+            <a asp-page="./Delete" asp-route-id="@Model.User?.Id">Delete</a>
+        </div>
+    }
+}
+
+
