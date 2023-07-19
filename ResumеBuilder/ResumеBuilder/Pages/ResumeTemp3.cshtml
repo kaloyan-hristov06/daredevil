@@ -1,0 +1,88 @@
+﻿@page
+@model ResumеBuilder.Pages.ResumeTemp3Model
+@{
+}
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resume</title>
+        <script src="https://unpkg.com/feather-icons"></script>
+        <link rel="stylesheet" href="Style3.css">
+    </head>
+
+    <body>
+        <form>
+            <div class="container">
+
+                <div class="profile">
+                    <div class="profile_container">
+                        <div>
+                            <h1 class="profile_name">
+                                @HttpContext.Session.GetString("_FullName")
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="group-1">
+                    <div class="personal_info">
+                        <h3 class="title">Personal info</h3>
+                        <textarea class="textarea2" placeholder="Personal info..." rows="1" cols="30"></textarea>
+                    </div>
+                    <div class="edu">
+                        <h3 class="title">Education</h3>
+                        <textarea class="textarea2" placeholder="Education..." rows="1" cols="30"></textarea>
+                    </div>
+                    <div class="skills">
+                        <h3 class="title">Skills</h3>
+                        <textarea class="textarea2" placeholder="Skills..." rows="1" cols="30"></textarea>
+                    </div>
+                    <div class="exp">
+                        <h3 class="title">Experience</h3>
+                        <textarea class="textarea2" placeholder="Experience..." rows="1" cols="30"></textarea>
+                    </div>
+                    <div class="interetss">
+                        <h3 class="title">Interests</h3>
+                        <textarea class="textarea2" placeholder="Interests..." rows="1" cols="30"></textarea>
+                    </div>
+                </div>
+
+
+
+
+                <hr>
+                <div class="group-3" style="text-align:center;">
+                    <div class="contact">
+                        <h3 class="title">Contact</h3>
+                        <div class="contact_info">
+                            <p class="description">
+                                @HttpContext.Session.GetString("_Address")
+                            </p>
+                            <p class="description">
+                                @HttpContext.Session.GetString("_PhoneNumber")
+                            </p>
+                            <p class="description">
+                                @HttpContext.Session.GetString("_Email")
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <script>
+                feather.replace()
+            </script>
+        </form>
+    </body>
+</html>
+
