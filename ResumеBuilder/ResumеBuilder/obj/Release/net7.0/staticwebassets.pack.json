@@ -1,8 +1,20 @@
 {
   "Files": [
     {
-      "Id": "D:\\Files\\Github\\daredevil\\ResumеBuilder\\ResumеBuilder\\obj\\Release\\net7.0\\scopedcss\\projectbundle\\ResumеBuilder.bundle.scp.css",
-      "PackagePath": "staticwebassets\\ResumеBuilder.bundle.scp.css"
+      "Id": "D:\\Files\\Github\\daredevil\\ResumеBuilder\\ResumеBuilder\\obj\\Release\\net7.0\\scopedcss\\projectbundle\\ResumeBuilder.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ResumeBuilder.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Files\\Github\\daredevil\\ResumеBuilder\\ResumеBuilder\\wwwroot\\css\\Style1.css",
+      "PackagePath": "staticwebassets\\css\\Style1.css"
+    },
+    {
+      "Id": "D:\\Files\\Github\\daredevil\\ResumеBuilder\\ResumеBuilder\\wwwroot\\css\\Style2.css",
+      "PackagePath": "staticwebassets\\css\\Style2.css"
+    },
+    {
+      "Id": "D:\\Files\\Github\\daredevil\\ResumеBuilder\\ResumеBuilder\\wwwroot\\css\\Style3.css",
+      "PackagePath": "staticwebassets\\css\\Style3.css"
     },
     {
       "Id": "D:\\Files\\Github\\daredevil\\ResumеBuilder\\ResumеBuilder\\wwwroot\\css\\site.css",
@@ -253,20 +265,20 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.ResumеBuilder.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.ResumeBuilder.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.build.ResumеBuilder.props",
-      "PackagePath": "build\\ResumеBuilder.props"
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.build.ResumeBuilder.props",
+      "PackagePath": "build\\ResumeBuilder.props"
     },
     {
-      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.ResumеBuilder.props",
-      "PackagePath": "buildMultiTargeting\\ResumеBuilder.props"
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.ResumeBuilder.props",
+      "PackagePath": "buildMultiTargeting\\ResumeBuilder.props"
     },
     {
-      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildTransitive.ResumеBuilder.props",
-      "PackagePath": "buildTransitive\\ResumеBuilder.props"
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildTransitive.ResumeBuilder.props",
+      "PackagePath": "buildTransitive\\ResumeBuilder.props"
     }
   ],
   "ElementsToRemove": []

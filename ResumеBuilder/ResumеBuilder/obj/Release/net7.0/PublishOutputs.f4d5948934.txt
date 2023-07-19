@@ -1,9 +1,9 @@
-D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Release\net7.0\PubTmp\Out\ResumеBuilder.exe
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Release\net7.0\PubTmp\Out\ResumeBuilder.exe
 D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Release\net7.0\PubTmp\Out\appsettings.Development.json
 D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Release\net7.0\PubTmp\Out\appsettings.json
-D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Release\net7.0\PubTmp\Out\ResumеBuilder.dll
-D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Release\net7.0\PubTmp\Out\ResumеBuilder.runtimeconfig.json
-D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Release\net7.0\PubTmp\Out\ResumеBuilder.pdb
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Release\net7.0\PubTmp\Out\ResumeBuilder.dll
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Release\net7.0\PubTmp\Out\ResumeBuilder.runtimeconfig.json
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Release\net7.0\PubTmp\Out\ResumeBuilder.pdb
 D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Release\net7.0\PubTmp\Out\Azure.Core.dll
 D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Release\net7.0\PubTmp\Out\Azure.Identity.dll
 D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Release\net7.0\PubTmp\Out\Humanizer.dll
@@ -229,4 +229,4 @@ D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Release\net7.0\PubTm
 D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Release\net7.0\PubTmp\Out\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Release\net7.0\PubTmp\Out\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Release\net7.0\PubTmp\Out\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Release\net7.0\PubTmp\Out\ResumеBuilder.deps.json
+D:\Files\Github\daredevil\ResumеBuilder\ResumеBuilder\obj\Release\net7.0\PubTmp\Out\ResumeBuilder.deps.json

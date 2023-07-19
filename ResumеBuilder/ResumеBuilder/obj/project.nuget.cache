@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EqbqdGryGEDOoKxHBRwgWV6eoxGeo4gOW3Uq/htBOl4KU43IPSfgWGWEbdQR1qAOTLjUifoxQfDI0wmic0Ep2g==",
+  "dgSpecHash": "KtyfGV2tV9IsdqmVXboBdmdY38jNFqoJ/mGHHAukVj3piOZf9mlMA8L9clAPYfQxCiniT0/mwZBkNDXXMDj2eA==",
   "success": true,
-  "projectFilePath": "D:\\Files\\Github\\daredevil\\ResumеBuilder\\ResumеBuilder\\ResumеBuilder.csproj",
+  "projectFilePath": "D:\\Files\\Github\\daredevil\\ResumеBuilder\\ResumеBuilder\\ResumeBuilder.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pavel\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\pavel\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

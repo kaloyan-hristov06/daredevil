@@ -11762,9 +11762,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Files\\Github\\daredevil\\ResumеBuilder\\ResumеBuilder\\ResumеBuilder.csproj",
-      "projectName": "ResumеBuilder",
-      "projectPath": "D:\\Files\\Github\\daredevil\\ResumеBuilder\\ResumеBuilder\\ResumеBuilder.csproj",
+      "projectUniqueName": "D:\\Files\\Github\\daredevil\\ResumеBuilder\\ResumеBuilder\\ResumeBuilder.csproj",
+      "projectName": "ResumeBuilder",
+      "projectPath": "D:\\Files\\Github\\daredevil\\ResumеBuilder\\ResumеBuilder\\ResumeBuilder.csproj",
       "packagesPath": "C:\\Users\\pavel\\.nuget\\packages\\",
       "outputPath": "D:\\Files\\Github\\daredevil\\ResumеBuilder\\ResumеBuilder\\obj\\",
       "projectStyle": "PackageReference",
