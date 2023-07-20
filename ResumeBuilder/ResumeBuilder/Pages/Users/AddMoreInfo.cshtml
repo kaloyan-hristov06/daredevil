@@ -24,7 +24,7 @@
 						<button type="button" style="width:40px;" onclick="RemoveSkillField()" class="btn btn-danger">-</button>
 						<br />
 						<br />
-						<input type="text" name="skillField" class="form-control"/>
+						<input type="text" name="skillField" class="form-control" required/>
 					</div>
 					<hr />
 					<div id="interestGroup">
@@ -33,7 +33,7 @@
 						<button type="button" style="width:40px;" onclick="RemoveInterestField()" class="btn btn-danger">-</button>
 						<br />
 						<br />
-						<input type="text" name="interestField" class="form-control"/>
+						<input type="text" name="interestField" class="form-control" required/>
 					</div>
 
 					<hr />
@@ -46,21 +46,21 @@
 						<fieldset id="mainExperienceSet" class="experienceSet">
 							<h4>Job</h4>
 							<label>From</label>
-							<input type="date" name="experienceFromDate" class="form-control experience-part" />
+							<input type="date" name="experienceFromDate" class="form-control experience-part" required />
 							<label>To</label>
 							<input type="date" name="experienceToDate" class="form-control experience-part" />
 							<br/>
 							<label>Job Title</label>
-							<input type="string" name="experienceJobTitle" class="form-control experience-part" />
+							<input type="string" name="experienceJobTitle" class="form-control experience-part" required />
 							<br/>
 							<label>Company Name</label>
-							<input type="string" name="experienceCompanyName" class="form-control experience-part" />
+							<input type="string" name="experienceCompanyName" class="form-control experience-part" required />
 							<br/>
 							<label>City</label>
-							<input type="string" name="experienceCity" class="form-control experience-part" />
+							<input type="string" name="experienceCity" class="form-control experience-part" required/>
 							<br />
 							<label>Country</label>
-							<input type="string" name="experienceCountry" class="form-control experience-part" />
+							<input type="string" name="experienceCountry" class="form-control experience-part" required />
 							<hr />
 						</fieldset>
 					</div>
@@ -72,19 +72,19 @@
 						<fieldset id="mainEducationSet" class="educationSet">
 							<h4>School/University</h4>
 							<label>Graduated</label>
-							<input type="date" name="graduated" class="form-control education-part" />
+							<input type="date" name="graduated" class="form-control education-part" required />
 							<br/>
 							<label>Degree</label>
-							<input type="string" name="educationDegree" class="form-control education-part" />
+							<input type="string" name="educationDegree" class="form-control education-part" required />
 							<br/>
 							<label>School/University</label>
-							<input type="string" name="educationStudyPlace" class="form-control education-part" />
+							<input type="string" name="educationStudyPlace" class="form-control education-part" required />
 							<br/>
 							<label>City</label>
-							<input type="string" name="educationCity" class="form-control education-part" />
+							<input type="string" name="educationCity" class="form-control education-part" required />
 							<br />
 							<label>Country</label>
-							<input type="string" name="educationCountry" class="form-control education-part" />
+							<input type="string" name="educationCountry" class="form-control education-part" required />
 							<hr />
 						</fieldset>
 					</div>

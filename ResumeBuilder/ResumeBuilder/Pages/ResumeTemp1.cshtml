@@ -1,0 +1,182 @@
+﻿@page
+@model ResumeBuilder.Pages.ResumeTemp1Model
+@{
+}
+@{
+    if(HttpContext.Session.GetString("_Id") is not null)
+    {
+        <link rel="stylesheet" href="~/css/Style1.css">
+
+        <form class="formTemp1">
+            <div class="container_class">
+                <div class="profile">
+                    <div class="profile_container">
+                        <div>
+                            <h1 class="profile_name">
+                                @HttpContext.Session.GetString("_FullName")
+                            </h1>
+                            <p class="profile_title">
+                                <textarea class="textarea" style="height: 80px;" placeholder="Position..." rows="4" cols="50"></textarea>
+                            </p>
+                            <p class="description profile_description">
+                                <textarea class="textarea1" style="height: 80px;" placeholder="Description..." rows="4" cols="50"></textarea>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="group-1">
+                    <div class="title">
+                        <h3 class="title">Skills</h3>
+                        @{
+                            if (Model.User?.Skills is null)
+                            {
+                                <textarea class="textarea2" placeholder="Skills..." rows="4" cols="50"></textarea>
+                            }
+                            else
+                            {
+                                List<string> skillsList = Model.User.Skills.Split(",").ToList();
+
+                                foreach (var skill in skillsList)
+                                {
+                                    <textarea class="textarea2" placeholder="Skills..." rows="4" cols="50">@skill</textarea>
+                                }
+                            }
+                        }
+
+                    </div>
+
+                    <div class="edu">
+                        <h3 class="title">Education</h3>
+                        @{
+                            if (Model.User?.Education is not null)
+                            {
+                                List<string> educationParts = Model.User?.Education.Split("|").ToList();
+                                List<string> graduated = educationParts[0].Split(",").ToList();
+                                List<string> degree = educationParts[1].Split(",").ToList();
+                                List<string> studyPlace = educationParts[2].Split(",").ToList();
+                                List<string> educationCity = educationParts[3].Split(",").ToList();
+                                List<string> educationCountry = educationParts[4].Split(",").ToList();
+
+                                for (int i = 0; i < graduated.Count; i++)
+                                {
+                                    <textarea id="education-textarea" class="textarea2" placeholder="Education..." rows="4" style="height: 150px;" cols="50">@graduated[i] - @degree[i],\n @studyPlace[i], @educationCity[i],\n @educationCountry[i]</textarea>
+                                    <script>
+                                        // JavaScript code to set the textarea content with a new line
+                                        const textareaEd = document.getElementById('education-textarea');
+                                        textareaEd.value = '@graduated[i] - @degree[i],\n @studyPlace[i], @educationCity[i],\n @educationCountry[i]';
+                                    </script>
+                                }
+                            }
+                            else
+                            {
+                                <textarea class="textarea2" placeholder="Education..." rows="4" cols="50"></textarea>
+                            }
+                        }
+                    </div>
+                </div>
+
+
+
+                <div class="group-2">
+                    <div class="exp">
+                        <h3 class="title">Experience</h3>
+                        @{
+                            if (Model.User?.Experiences is not null)
+                            {
+                                List<string> experienceParts = Model.User?.Experiences.Split("|").ToList();
+                                List<string> fromDate = experienceParts[0].Split(",").ToList();
+                                List<string> toDate = experienceParts[1].Split(",").ToList();
+                                List<string> jobTitle = experienceParts[2].Split(",").ToList();
+                                List<string> companyName = experienceParts[3].Split(",").ToList();
+                                List<string> experienceCity = experienceParts[4].Split(",").ToList();
+                                List<string> experienceCountry = experienceParts[5].Split(",").ToList();
+
+                                for (int i = 0; i < fromDate.Count; i++)
+                                {
+                                    <textarea id="experience-textarea" class="textarea2" placeholder="Experience..." rows="4" style="height: 150px;" cols="50">@fromDate[i] - @toDate[i] -\n @jobTitle[i], @companyName[i], @experienceCity[i],\n @experienceCountry[i]</textarea>
+                                    <script>
+                                        // JavaScript code to set the textarea content with a new line
+                                        const textareaEx = document.getElementById('experience-textarea');
+                                        textareaEx.value = '@fromDate[i] - @toDate[i] -\n @jobTitle[i], @companyName[i], @experienceCity[i],\n @experienceCountry[i]';
+                                    </script>
+                                }
+                            }
+                            else
+                            {
+                                <textarea class="textarea2" placeholder="Experience..." rows="4" cols="50"></textarea>
+                            }
+                        }
+                    </div>
+
+                    <div class="interetss">
+                        <h3 class="title">Interests</h3>
+                        @{
+                            if (Model.User?.Interests is null)
+                            {
+                                <textarea class="textarea2" placeholder="Interests..." rows="4" cols="50"></textarea>
+                            }
+                            else
+                            {
+                                List<string> interestsList = Model.User.Interests.Split(",").ToList();
+
+                                foreach (var interest in interestsList)
+                                {
+                                    <textarea class="textarea2" placeholder="Interests..." rows="4" cols="50">@interest</textarea>
+                                }
+                            }
+                        }
+                    </div>
+                </div>
+
+
+
+                <hr class="HrTemp1">
+                <div class="group-3" style="text-align:center;">
+                    <div class="contact">
+                        <h3 class="title">Contact</h3>
+                        <div class="contact_info">
+                            <p class="description">
+                                @HttpContext.Session.GetString("_Address")
+                            </p>
+                            <p class="description">
+                                @HttpContext.Session.GetString("_PhoneNumber")
+                            </p>
+                            <p class="description">
+                                @HttpContext.Session.GetString("_Email")
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+        <script type="text/javascript">
+            // Default export is a4 paper, portrait, using millimeters for units
+            const { jsPDF } = window.jspdf;
+
+            window.jsPDF = window.jspdf.jsPDF;
+            var docPDF = new jsPDF();
+            function pdfSave() {
+                var elementHTML = document.querySelector(".formTemp1")
+                docPDF.html(elementHTML, {
+                    callback: function (docPDF) {
+                        docPDF.save('HTML Linuxhint web page.pdf');
+                    },
+                    x: 0,
+                    y: 0,
+                    width: 165,
+                    windowWidth: 900
+                });
+            }
+        </script>
+        <button align="center" onclick="pdfSave()" class="btn btn-primary">Download PDF</button>
+    }
+    else
+    {
+        <h1>Restricted Acccess</h1>
+    }
+}

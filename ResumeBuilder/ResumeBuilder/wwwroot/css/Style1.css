@@ -1,0 +1,202 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+.formTemp1 {
+    font-size: 10px;
+    font-family: Inter, sans-serif;
+    /*background-color: rgb(190, 185, 185);*/
+    color: black;
+}
+
+
+
+
+
+
+/* common styles */
+
+
+
+.description {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    /*color: var(--text-color);*/
+}
+
+.title {
+    /*color: var(--primary-color);*/
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.item_preTitle {
+    font-size: 1.4rem;
+    /*color: var(--text-color);*/
+    font-weight: 300;
+}
+
+.item_title {
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 500;
+    margin: 0.8rem 0;
+}
+
+.item_subtitle {
+    font-size: 1.4rem;
+    /*color: var(--text-color);*/
+    font-weight: 400;
+}
+
+
+/* layouts */
+.container_class {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background: white;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .container_class {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+}
+
+.profile {
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+}
+
+.group-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.group-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.group-3 {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+    .group-3 > div {
+        flex: 1;
+    }
+
+@media only screen and (max-width: 768px) {
+    .profile {
+        margin-bottom: 0;
+    }
+
+    .group-3 {
+        flex-direction: column;
+    }
+}
+
+/* profile */
+.profile_container {
+    display: flex;
+    gap: 2rem;
+}
+
+.profile_name{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: clamp(2.5rem, 8vw, 7rem);
+    text-transform: uppercase;
+    display: block;
+}
+
+
+
+
+.textarea {
+    width: 400px;
+    height: 50px;
+    border: 1px black;
+    border-radius: 4px;
+    padding: 12px;
+    color: black;
+    font-size: 30px;
+    /*font-size: clamp(2.3rem, 8vw, 1rem);*/
+    font-weight: 700;
+    line-height: 1.4;
+    overflow: hidden;
+    max-width: 500px;
+}
+
+.textarea1 {
+    width: 900px;
+    height: 50px;
+    border: 1px black;
+    border-radius: 4px;
+    padding: 12px;
+    color: black;
+    font-size: clamp(1.7rem, 8vw, 1rem);
+    font-weight: 500;
+    line-height: 1.4;
+    overflow: hidden;
+    max-width: 900px;
+}
+
+.textarea2 {
+    width: 400px;
+    height: 50px;
+    border: 1px black;
+    border-radius: 4px;
+    padding: 12px;
+    color: black;
+    font-size: clamp(1.7rem, 8vw, 1rem);
+    font-weight: 500;
+    line-height: 1.4;
+    overflow: hidden;
+    max-width: 400px;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .profile_container {
+        flex-direction: column;
+    }
+}
+
+
+/* socials */
+
+
+.HrTemp1 {
+    grid-column: 1/-1;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-top: 2px solid rgba(128, 128, 128, 0.229);
+}
+
+@media only screen and (max-width: 768px) {
+    .HrTemp1 {
+        margin: 0 auto;
+    }
+}

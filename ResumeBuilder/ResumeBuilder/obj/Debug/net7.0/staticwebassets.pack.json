@@ -5,12 +5,28 @@
       "PackagePath": "staticwebassets\\ResumeBuilder.bundle.scp.css"
     },
     {
+      "Id": "D:\\Files\\Github\\daredevil\\ResumeBuilder\\ResumeBuilder\\wwwroot\\css\\Style1.css",
+      "PackagePath": "staticwebassets\\css\\Style1.css"
+    },
+    {
+      "Id": "D:\\Files\\Github\\daredevil\\ResumeBuilder\\ResumeBuilder\\wwwroot\\css\\Style2.css",
+      "PackagePath": "staticwebassets\\css\\Style2.css"
+    },
+    {
       "Id": "D:\\Files\\Github\\daredevil\\ResumeBuilder\\ResumeBuilder\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "D:\\Files\\Github\\daredevil\\ResumeBuilder\\ResumeBuilder\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Files\\Github\\daredevil\\ResumeBuilder\\ResumeBuilder\\wwwroot\\images\\Template1.png",
+      "PackagePath": "staticwebassets\\images\\Template1.png"
+    },
+    {
+      "Id": "D:\\Files\\Github\\daredevil\\ResumeBuilder\\ResumeBuilder\\wwwroot\\images\\Template2.png",
+      "PackagePath": "staticwebassets\\images\\Template2.png"
     },
     {
       "Id": "D:\\Files\\Github\\daredevil\\ResumeBuilder\\ResumeBuilder\\wwwroot\\images\\generic-profile-image.png",

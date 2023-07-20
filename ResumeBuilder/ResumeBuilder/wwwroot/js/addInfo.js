@@ -11,6 +11,8 @@ function AddSkillField() {
 
     newSkillField.classList.add("skill-field");
 
+    newSkillField.required = "true";
+
     const lineBreak = document.createElement("br");
 
     lineBreak.className = "form-skill-break";
@@ -41,6 +43,8 @@ function AddInterestField() {
 
     newInterestField.classList.add("interest-field");
 
+    newInterestField.required = "true";
+
     const lineBreak = document.createElement("br");
 
     lineBreak.className = "form-interest-break";
@@ -69,9 +73,7 @@ function AddExperienceFields() {
 
 function RemoveExperienceFields() {
     let items = document.getElementsByClassName("experienceSet");
-    if (items.length > 1) {
-        experienceGroup.removeChild(items[items.length - 1]);
-    }
+    experienceGroup.removeChild(items[items.length - 1]);
 }
 
 var educationGroup = document.getElementById("educationGroup");
@@ -85,7 +87,5 @@ function AddEducationFields() {
 
 function RemoveEducationFields() {
     let items = document.getElementsByClassName("educationSet");
-    if (items.length > 1) {
-        educationGroup.removeChild(items[items.length - 1]);
-    }
+    educationGroup.removeChild(items[items.length - 1]);
 }

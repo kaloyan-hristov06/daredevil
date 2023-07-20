@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Files\Github\daredevil\ResumeBuilder\ResumeBuilder
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Files/Github/daredevil/ResumeBuilder/ResumeBuilder/Pages/Builder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnVpbGRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Files/Github/daredevil/ResumeBuilder/ResumeBuilder/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -30,6 +34,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Files/Github/daredevil/ResumeBuilder/ResumeBuilder/Pages/LogOut.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nT3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/Github/daredevil/ResumeBuilder/ResumeBuilder/Pages/ResumeTemp1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzdW1lVGVtcDEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/Github/daredevil/ResumeBuilder/ResumeBuilder/Pages/ResumeTemp2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzdW1lVGVtcDIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Files/Github/daredevil/ResumeBuilder/ResumeBuilder/Pages/Shared/_ValidationScriptsPartial.cshtml]
@@ -54,10 +66,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Files/Github/daredevil/ResumeBuilder/ResumeBuilder/Pages/Users/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Files/Github/daredevil/ResumeBuilder/ResumeBuilder/Pages/Users/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Files/Github/daredevil/ResumeBuilder/ResumeBuilder/Pages/Users/Login.cshtml]

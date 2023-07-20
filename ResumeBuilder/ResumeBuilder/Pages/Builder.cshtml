@@ -1,0 +1,29 @@
+﻿@page
+@model ResumeBuilder.Pages.BuilderModel
+@{
+}
+@{
+	if(HttpContext.Session.GetString("_Id") == null)
+	{
+		<h3>This page is meant for people with an existing account.</h3>
+		<h3>If you don't have an account <a asp-page="/Users/Create">Sign Up</a></h3>
+		<h3>Have an Account? Then <a asp-page="/Users/Login">Log in</a></h3>
+	}
+	else
+	{
+		<div style="">
+		</div>
+		<a asp-page="/ResumeTemp1">
+			<img src="~/images/Template1.png" style="width:25%; height:auto;">
+			<br>
+			<p style="font-size:20px;color:black;text-decoration:none;">Resume Template 1</p>
+		</a>
+		<br />
+		<a asp-page="/ResumeTemp2">
+			<img src="~/images/Template2.png" style="width:25%; height:auto;">
+			<br>
+			<p style="font-size:20px;color:black;text-decoration:none;">Resume Template 2</p>
+		</a>
+	}
+}
+

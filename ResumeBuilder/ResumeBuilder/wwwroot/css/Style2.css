@@ -1,0 +1,167 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+/*.Temp2 {
+    font-size: 10px;
+    font-family: Inter, sans-serif;
+    background-color: rgb(146, 139, 139)
+}*/
+
+
+
+/* common styles */
+
+
+
+.description {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    /*color: var(--text-color);*/
+}
+
+.title {
+    /*color: var(--primary-color);*/
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+
+/* layouts */
+.container_class {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background: white;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .container_class {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+}
+
+.profile {
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+}
+
+.group-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+}
+
+.group-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 3.3rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .profile {
+        margin-bottom: 0;
+    }
+
+    .group-3 {
+        flex-direction: column;
+    }
+}
+
+/* profile */
+.profile_container {
+    display: flex;
+    gap: 2rem;
+}
+
+.profile_name {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    text-transform: uppercase;
+    display: block;
+}
+
+
+
+
+
+.textarea {
+    width: 300px;
+    height: 50px;
+    border: 1px black;
+    border-radius: 4px;
+    padding: 12px;
+    color: black;
+    font-size: clamp(2.3rem, 8vw, 1rem);
+    font-weight: 700;
+    line-height: 1.4;
+    overflow: hidden;
+}
+
+.textarea1 {
+    width: 400px;
+    height: 130px;
+    border: 1px black;
+    border-radius: 4px;
+    padding: 12px;
+    color: black;
+    font-size: clamp(1.7rem, 8vw, 1rem);
+    font-weight: 500;
+    line-height: 1.4;
+    overflow: hidden;
+    max-width: 400px;
+}
+
+.textarea2 {
+    width: 400px;
+    height: 120px;
+    border: 1px black;
+    border-radius: 4px;
+    padding: 12px;
+    color: black;
+    font-size: clamp(1.7rem, 8vw, 1rem);
+    font-weight: 500;
+    line-height: 1.4;
+    overflow: hidden;
+    max-width: 400px;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .profile_container {
+        flex-direction: column;
+    }
+}
+
+
+/* socials */
+
+
+.HrTemp2 {
+    grid-column: 1/-1;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 0;
+    border: none;
+    border-top: 2px solid rgba(128, 128, 128, 0.229);
+}
+
+@media only screen and (max-width: 768px) {
+    .HrTemp2 {
+        margin: 0 auto;
+    }
+}
