@@ -121,7 +121,8 @@
 .profile_name{
     color: var(--primary-color);
     font-weight: 700;
-    font-size: clamp(2.5rem, 8vw, 7rem);
+    font-size: 80px;
+    /*font-size: clamp(2.5rem, 8vw, 7rem);*/
     text-transform: uppercase;
     display: block;
 }
@@ -134,13 +135,12 @@
     height: 50px;
     border: 1px black;
     border-radius: 4px;
-    padding: 12px;
-    color: black;
-    font-size: 30px;
+    /*padding: 12px;*/
+    font-size: 25px;
     /*font-size: clamp(2.3rem, 8vw, 1rem);*/
     font-weight: 700;
     line-height: 1.4;
-    overflow: hidden;
+    overflow: visible;
     max-width: 500px;
 }
 

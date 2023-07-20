@@ -1,13 +1,14 @@
 ﻿@page
 @model ResumeBuilder.Pages.ResumeTemp1Model
 @{
+    ViewData["Title"] = "ResumeTemp1";
 }
 @{
     if(HttpContext.Session.GetString("_Id") is not null)
     {
         <link rel="stylesheet" href="~/css/Style1.css">
 
-        <form class="formTemp1">
+        <form class="formTemp1" id="resumeTemp1">
             <div class="container_class">
                 <div class="profile">
                     <div class="profile_container">
@@ -164,12 +165,12 @@
                 var elementHTML = document.querySelector(".formTemp1")
                 docPDF.html(elementHTML, {
                     callback: function (docPDF) {
-                        docPDF.save('HTML Linuxhint web page.pdf');
+                        docPDF.save('resume.pdf');
                     },
                     x: 0,
                     y: 0,
                     width: 165,
-                    windowWidth: 900
+                    windowWidth: 920
                 });
             }
         </script>

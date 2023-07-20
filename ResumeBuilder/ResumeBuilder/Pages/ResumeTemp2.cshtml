@@ -1,6 +1,7 @@
 ﻿@page
 @model ResumeBuilder.Pages.ResumeTemp2Model
 @{
+    ViewData["Title"] = "ResumeTemp2";
 }
 
 @{
@@ -157,12 +158,12 @@
                 var elementHTML = document.querySelector(".Temp2")
                 docPDF.html(elementHTML, {
                     callback: function (docPDF) {
-                        docPDF.save('HTML Linuxhint web page.pdf');
+                        docPDF.save('resume.pdf');
                     },
                     x: 0,
                     y: 0,
                     width: 165,
-                    windowWidth: 900
+                    windowWidth: 920
                 });
             }
         </script>
